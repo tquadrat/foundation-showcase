@@ -1,0 +1,29 @@
+#
+# The command-line arguments for the tests in TestCLI
+#
+--oBigDecimal=3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
+--oBigInteger=123456789012345678901234567890
+--obyte=4
+--oByte=5
+--ochar=¢
+--oCharacter=©
+--oCharset=UTF-8
+
+--oboolean
+--oboolean2=false
+--oBoolean
+--oBoolean2=FALSE
+--oString=Dies ist ein Text für die Option --oString
+
+# Arguments follow here
+3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
+123456789012345678901234567890
+6
+7
+¢
+©
+ISO-8859-11
+
+true
+TRUE
+Dies ist ein Text für das String-Argument

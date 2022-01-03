@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"org.tquadrat.foundation.showcase","l":"org.tquadrat.foundation.showcase.config"},{"m":"org.tquadrat.foundation.showcase","l":"org.tquadrat.foundation.showcase.i18n"},{"m":"org.tquadrat.foundation.showcase","l":"org.tquadrat.foundation.showcase.javadoc"}];updateSearchResults();

@@ -1,0 +1,4 @@
+module:org.tquadrat.foundation.showcase
+org.tquadrat.foundation.showcase.config
+org.tquadrat.foundation.showcase.i18n
+org.tquadrat.foundation.showcase.javadoc
