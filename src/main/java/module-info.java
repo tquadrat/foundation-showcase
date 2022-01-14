@@ -27,13 +27,9 @@
 module org.tquadrat.foundation.showcase
 {
     requires java.base;
-    requires org.tquadrat.foundation.base;
-    requires org.tquadrat.foundation.util;
     requires org.tquadrat.foundation.value;
-    requires org.tquadrat.foundation.xml;
     requires org.tquadrat.foundation.svg;
     requires org.tquadrat.foundation.tools;
-    requires org.tquadrat.foundation.i18n;
     requires org.tquadrat.foundation.config;
 }
 
