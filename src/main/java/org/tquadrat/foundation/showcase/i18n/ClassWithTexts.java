@@ -85,7 +85,7 @@ public final class ClassWithTexts
      *  The name of the base bundle: {@value}.
      */
     @SuppressWarnings( "DefaultAnnotationParam" )
-    @BaseBundleName( defaultLanguage = "de_DE", createResourceBundleProvider = false )
+    @BaseBundleName( defaultLanguage = "de_DE" )
     public static final String BASE_BUNDLE_NAME = "org.tquadrat.foundation.showcase.TxtAndMsg";
 
     /**
