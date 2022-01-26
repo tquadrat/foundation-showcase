@@ -36,13 +36,13 @@ import org.tquadrat.foundation.i18n.UseAdditionalTexts;
  *  A class with texts and message for the text of the I18N annotation
  *  processor.
  *
- *  @version $Id: ClassWithTexts.java 891 2021-04-02 08:07:35Z tquadrat $
+ *  @version $Id: ClassWithTexts.java 995 2022-01-23 01:09:35Z tquadrat $
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
  *  @UMLGraph.link
  *  @since 0.1.0
  */
-@ClassVersion( sourceVersion = "$Id: ClassWithTexts.java 891 2021-04-02 08:07:35Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: ClassWithTexts.java 995 2022-01-23 01:09:35Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 @UseAdditionalTexts
 @UtilityClass
