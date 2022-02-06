@@ -1,0 +1,3 @@
+This text was provided in an external text file (doc-files/IncludeFile.txt in this case) and included through the @include tag.
+
+Of course, we can include multiple lines.
