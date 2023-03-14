@@ -28,6 +28,7 @@ import java.util.Set;
 
 import org.apiguardian.api.API;
 import org.tquadrat.foundation.annotation.ClassVersion;
+import org.tquadrat.foundation.annotation.PropertyName;
 import org.tquadrat.foundation.config.CLIBeanSpec;
 import org.tquadrat.foundation.config.ConfigurationBeanSpecification;
 import org.tquadrat.foundation.config.Option;
@@ -71,6 +72,15 @@ public interface CLIConfiguration extends CLIBeanSpec
     public Set<DayOfWeek> getDays();
 
     /**
+     *  Returns the One-Two-Three as set on the command line.
+     *
+     *  @return The One-Two-Three.
+     */
+    @Option( name = "--ott", required = true, metaVar = "OTT", usage = "The One-Two-Three" )
+    @PropertyName( "ott" )
+    public Set<OneTwoThree> getOTT();
+
+    /**
      *  Initialises the configuration bean.
      *
      *  @return The initialisation data.
@@ -80,6 +90,7 @@ public interface CLIConfiguration extends CLIBeanSpec
     {
         final Map<String,Object> retValue = new HashMap<>();
         retValue.put( "days", EnumSet.noneOf( DayOfWeek.class ) );
+        retValue.put( "ott", EnumSet.noneOf( OneTwoThree.class ) );
 
         //---* Done *----------------------------------------------------------
         return retValue;

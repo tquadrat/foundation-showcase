@@ -10,6 +10,7 @@
 <meta name="keywords" content="org.tquadrat.foundation.showcase.config.CLIConfiguration interface">
 <meta name="keywords" content="getInstance()">
 <meta name="keywords" content="getDays()">
+<meta name="keywords" content="getOTT()">
 <meta name="keywords" content="initData()">
 <link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../../../script-dir/jquery-ui.min.css" title="Style">
@@ -87,7 +88,7 @@ loadScripts(document, 'script');</script>
 <a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.html" title="class or interface in org.apiguardian.api" class="external-link">@API</a>(<a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.html#status()" title="class or interface in org.apiguardian.api" class="external-link">status</a>=<a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.Status.html#STABLE" title="class or interface in org.apiguardian.api" class="external-link">STABLE</a>,
      <a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.html#since()" title="class or interface in org.apiguardian.api" class="external-link">since</a>="0.1.0")
 @ConfigurationBeanSpecification(synchronizeAccess=true)
-</span><span class="modifiers">public interface </span><span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CLIConfiguration.html#line-44">CLIConfiguration</a></span><span class="extends-implements">
+</span><span class="modifiers">public interface </span><span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CLIConfiguration.html#line-45">CLIConfiguration</a></span><span class="extends-implements">
 extends org.tquadrat.foundation.config.CLIBeanSpec</span></div>
 <div class="block">A configuration bean definition.</div>
 <dl class="notes">
@@ -149,9 +150,14 @@ extends org.tquadrat.foundation.config.CLIBeanSpec</span></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Returns the instance of the configuration bean.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#initData()" class="member-name-link">initData</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="OneTwoThree.html" title="enum class in org.tquadrat.foundation.showcase.config">OneTwoThree</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getOTT()" class="member-name-link">getOTT</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the One-Two-Three as set on the command line.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#initData()" class="member-name-link">initData</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Initialises the configuration bean.</div>
 </div>
 </div>
@@ -177,7 +183,7 @@ extends org.tquadrat.foundation.config.CLIBeanSpec</span></div>
 <li>
 <section class="detail" id="getInstance()">
 <h3>getInstance</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="CLIConfiguration.html" title="interface in org.tquadrat.foundation.showcase.config">CLIConfiguration</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CLIConfiguration.html#line-57">getInstance</a></span>()</div>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="CLIConfiguration.html" title="interface in org.tquadrat.foundation.showcase.config">CLIConfiguration</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CLIConfiguration.html#line-58">getInstance</a></span>()</div>
 <div class="block">Returns the instance of the configuration bean.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -192,7 +198,7 @@ extends org.tquadrat.foundation.config.CLIBeanSpec</span></div>
         required=true,
         metaVar="DAY",
         usage="The weekdays")
-</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/DayOfWeek.html" title="class or interface in java.time" class="external-link">DayOfWeek</a>&gt;</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CLIConfiguration.html#line-70">getDays</a></span>()</div>
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/DayOfWeek.html" title="class or interface in java.time" class="external-link">DayOfWeek</a>&gt;</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CLIConfiguration.html#line-71">getDays</a></span>()</div>
 <div class="block">Returns the weekdays as set on the command line.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -201,9 +207,25 @@ extends org.tquadrat.foundation.config.CLIBeanSpec</span></div>
 </section>
 </li>
 <li>
+<section class="detail" id="getOTT()">
+<h3>getOTT</h3>
+<div class="member-signature"><span class="annotations">@Option(name="--ott",
+        required=true,
+        metaVar="OTT",
+        usage="The One-Two-Three")
+@PropertyName("ott")
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="OneTwoThree.html" title="enum class in org.tquadrat.foundation.showcase.config">OneTwoThree</a>&gt;</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CLIConfiguration.html#line-79">getOTT</a></span>()</div>
+<div class="block">Returns the One-Two-Three as set on the command line.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The One-Two-Three.</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="initData()">
 <h3>initData</h3>
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CLIConfiguration.html#line-78">initData</a></span>()</div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CLIConfiguration.html#line-88">initData</a></span>()</div>
 <div class="block">Initialises the configuration bean.</div>
 <dl class="notes">
 <dt>Returns:</dt>
