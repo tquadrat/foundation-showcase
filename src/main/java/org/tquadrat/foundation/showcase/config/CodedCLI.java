@@ -53,12 +53,13 @@ import org.tquadrat.foundation.lang.StringConverter;
  *  This class uses the programmatic approach for the CLI feature from the
  *  config project.
  *
- *  @version $Id: CodedCLI.java 934 2021-12-06 15:19:40Z tquadrat $
+ *  @version $Id: CodedCLI.java 1053 2023-03-11 00:10:49Z tquadrat $
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
  *  @UMLGraph.link
  *  @since 0.1.0
  */
-@ClassVersion( sourceVersion = "$Id: CodedCLI.java 934 2021-12-06 15:19:40Z tquadrat $" )
+@SuppressWarnings( "ClassWithTooManyFields" )
+@ClassVersion( sourceVersion = "$Id: CodedCLI.java 1053 2023-03-11 00:10:49Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 @PlaygroundClass
 public final class CodedCLI
@@ -271,6 +272,7 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
      *      otherwise.
      *  @throws IOException Cannot write the usage.
      */
+    @SuppressWarnings( {"BooleanMethodNameMustStartWithQuestion", "UseOfSystemOutOrSystemErr"} )
     public final boolean execute( final String... args ) throws IOException
     {
         var argIndex = 0;
@@ -397,6 +399,7 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
         final BiConsumer<String,String> stringOptSetter = ($,value) -> m_StringOpt = value;
         final CmdLineValueHandler<String> stringArgHandler = new StringValueHandler( stringArgSetter );
         final CmdLineValueHandler<String> stringOptHandler = new StringValueHandler( stringOptSetter );
+        //noinspection UnusedAssignment
         cliDefinitions.add(
             new CLIArgumentDefinition(
                 "String", // The property name; not used in this context
@@ -441,10 +444,151 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
     }   //  execute()
 
     /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final BigDecimal getBigDecimalArg() { return m_BigDecimalArg; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final BigDecimal getBigDecimalOpt() { return m_BigDecimalOpt; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final BigInteger getBigIntegerArg() { return m_BigIntegerArg; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final BigInteger getBigIntegerOpt() { return m_BigIntegerOpt; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final boolean isBooleanPrimitiveArg() { return m_BooleanPrimitiveArg; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final boolean isBooleanPrimitiveOpt() { return m_BooleanPrimitiveOpt; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final Boolean getBooleanArg() { return m_BooleanArg; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final Boolean getBooleanOpt() { return m_BooleanOpt; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final byte getBytePrimitiveArg() { return m_BytePrimitiveArg; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final byte getBytePrimitiveOpt() { return m_BytePrimitiveOpt; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final Byte getByteArg() { return m_ByteArg; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final Byte getByteOpt() { return m_ByteOpt; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final char getCharArg() { return m_CharArg; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final char getCharOpt() { return m_CharOpt; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final Character getCharacterArg() { return m_CharacterArg; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final Character getCharacterOpt() { return m_CharacterOpt; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final Charset getCharsetArg() { return m_CharsetArg; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final Charset getCharsetOpt() { return m_CharsetOpt; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final String getStringArg() { return m_StringArg; }
+
+    /**
+     *  Getter.
+     *
+     *  @return The attribute value.
+     */
+    public final String getStringOpt() { return m_StringOpt; }
+
+    /**
      *  The program entry point.
      *
      *  @param  args    The command line arguments.
      */
+    @SuppressWarnings( "UseOfSystemOutOrSystemErr" )
     public static final void main( final String... args )
     {
         try

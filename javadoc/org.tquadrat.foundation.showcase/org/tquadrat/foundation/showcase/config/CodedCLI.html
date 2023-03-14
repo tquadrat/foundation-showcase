@@ -30,6 +30,26 @@
 <meta name="keywords" content="m_StringOpt">
 <meta name="keywords" content="addDefinition()">
 <meta name="keywords" content="execute()">
+<meta name="keywords" content="getBigDecimalArg()">
+<meta name="keywords" content="getBigDecimalOpt()">
+<meta name="keywords" content="getBigIntegerArg()">
+<meta name="keywords" content="getBigIntegerOpt()">
+<meta name="keywords" content="isBooleanPrimitiveArg()">
+<meta name="keywords" content="isBooleanPrimitiveOpt()">
+<meta name="keywords" content="getBooleanArg()">
+<meta name="keywords" content="getBooleanOpt()">
+<meta name="keywords" content="getBytePrimitiveArg()">
+<meta name="keywords" content="getBytePrimitiveOpt()">
+<meta name="keywords" content="getByteArg()">
+<meta name="keywords" content="getByteOpt()">
+<meta name="keywords" content="getCharArg()">
+<meta name="keywords" content="getCharOpt()">
+<meta name="keywords" content="getCharacterArg()">
+<meta name="keywords" content="getCharacterOpt()">
+<meta name="keywords" content="getCharsetArg()">
+<meta name="keywords" content="getCharsetOpt()">
+<meta name="keywords" content="getStringArg()">
+<meta name="keywords" content="getStringOpt()">
 <meta name="keywords" content="main()">
 <link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../../../script-dir/jquery-ui.min.css" title="Style">
@@ -102,7 +122,7 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <hr>
-<div class="type-signature"><span class="annotations">@ClassVersion(sourceVersion="$Id: CodedCLI.java 934 2021-12-06 15:19:40Z tquadrat $")
+<div class="type-signature"><span class="annotations">@ClassVersion(sourceVersion="$Id: CodedCLI.java 1053 2023-03-11 00:10:49Z tquadrat $")
 <a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.html" title="class or interface in org.apiguardian.api" class="external-link">@API</a>(<a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.html#status()" title="class or interface in org.apiguardian.api" class="external-link">status</a>=<a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.Status.html#STABLE" title="class or interface in org.apiguardian.api" class="external-link">STABLE</a>,
      <a href="https://apiguardian-team.github.io/apiguardian/docs/current/api/org/apiguardian/api/API.html#since()" title="class or interface in org.apiguardian.api" class="external-link">since</a>="0.1.0")
 @PlaygroundClass
@@ -114,7 +134,7 @@ loadScripts(document, 'script');</script>
 <dt><span class="simpleTagLabel">Author:</span></dt>
   <dd>Thomas Thrien (<a href="mailto:thomas.thrien@tquadrat.org">thomas.thrien@tquadrat.org</a>)</dd>
 <dt>Version:</dt>
-<dd>$Id: CodedCLI.java 934 2021-12-06 15:19:40Z tquadrat $</dd>
+<dd>$Id: CodedCLI.java 1053 2023-03-11 00:10:49Z tquadrat $</dd>
 <dt>Since:</dt>
 <dd>0.1.0</dd>
 
@@ -291,6 +311,106 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Does the programs work.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBigDecimalArg()" class="member-name-link">getBigDecimalArg</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBigDecimalOpt()" class="member-name-link">getBigDecimalOpt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html" title="class or interface in java.math" class="external-link">BigInteger</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBigIntegerArg()" class="member-name-link">getBigIntegerArg</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html" title="class or interface in java.math" class="external-link">BigInteger</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBigIntegerOpt()" class="member-name-link">getBigIntegerOpt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBooleanArg()" class="member-name-link">getBooleanArg</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBooleanOpt()" class="member-name-link">getBooleanOpt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getByteArg()" class="member-name-link">getByteArg</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getByteOpt()" class="member-name-link">getByteOpt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final byte</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBytePrimitiveArg()" class="member-name-link">getBytePrimitiveArg</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final byte</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBytePrimitiveOpt()" class="member-name-link">getBytePrimitiveOpt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link">Character</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCharacterArg()" class="member-name-link">getCharacterArg</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link">Character</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCharacterOpt()" class="member-name-link">getCharacterOpt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final char</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCharArg()" class="member-name-link">getCharArg</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final char</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCharOpt()" class="member-name-link">getCharOpt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/Charset.html" title="class or interface in java.nio.charset" class="external-link">Charset</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCharsetArg()" class="member-name-link">getCharsetArg</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/Charset.html" title="class or interface in java.nio.charset" class="external-link">Charset</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCharsetOpt()" class="member-name-link">getCharsetOpt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getStringArg()" class="member-name-link">getStringArg</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getStringOpt()" class="member-name-link">getStringOpt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isBooleanPrimitiveArg()" class="member-name-link">isBooleanPrimitiveArg</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isBooleanPrimitiveOpt()" class="member-name-link">isBooleanPrimitiveOpt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Getter.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static final void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#main(java.lang.String...)" class="member-name-link">main</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;args)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -316,140 +436,140 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="m_BigDecimalArg">
 <h3>m_BigDecimalArg</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-72">m_BigDecimalArg</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-73">m_BigDecimalArg</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_BigDecimalOpt">
 <h3>m_BigDecimalOpt</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-77">m_BigDecimalOpt</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-78">m_BigDecimalOpt</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_BigIntegerArg">
 <h3>m_BigIntegerArg</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html" title="class or interface in java.math" class="external-link">BigInteger</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-82">m_BigIntegerArg</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html" title="class or interface in java.math" class="external-link">BigInteger</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-83">m_BigIntegerArg</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_BigIntegerOpt">
 <h3>m_BigIntegerOpt</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html" title="class or interface in java.math" class="external-link">BigInteger</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-87">m_BigIntegerOpt</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html" title="class or interface in java.math" class="external-link">BigInteger</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-88">m_BigIntegerOpt</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_BooleanPrimitiveArg">
 <h3>m_BooleanPrimitiveArg</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-92">m_BooleanPrimitiveArg</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-93">m_BooleanPrimitiveArg</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_BooleanPrimitiveOpt">
 <h3>m_BooleanPrimitiveOpt</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-97">m_BooleanPrimitiveOpt</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-98">m_BooleanPrimitiveOpt</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_BooleanArg">
 <h3>m_BooleanArg</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-102">m_BooleanArg</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-103">m_BooleanArg</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_BooleanOpt">
 <h3>m_BooleanOpt</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-107">m_BooleanOpt</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-108">m_BooleanOpt</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_BytePrimitiveArg">
 <h3>m_BytePrimitiveArg</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-112">m_BytePrimitiveArg</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-113">m_BytePrimitiveArg</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_BytePrimitiveOpt">
 <h3>m_BytePrimitiveOpt</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-117">m_BytePrimitiveOpt</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-118">m_BytePrimitiveOpt</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_ByteArg">
 <h3>m_ByteArg</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-122">m_ByteArg</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-123">m_ByteArg</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_ByteOpt">
 <h3>m_ByteOpt</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-127">m_ByteOpt</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-128">m_ByteOpt</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_CharArg">
 <h3>m_CharArg</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">char</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-132">m_CharArg</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">char</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-133">m_CharArg</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_CharOpt">
 <h3>m_CharOpt</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">char</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-137">m_CharOpt</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">char</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-138">m_CharOpt</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_CharacterArg">
 <h3>m_CharacterArg</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link">Character</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-142">m_CharacterArg</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link">Character</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-143">m_CharacterArg</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_CharacterOpt">
 <h3>m_CharacterOpt</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link">Character</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-147">m_CharacterOpt</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link">Character</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-148">m_CharacterOpt</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_CharsetArg">
 <h3>m_CharsetArg</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/Charset.html" title="class or interface in java.nio.charset" class="external-link">Charset</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-152">m_CharsetArg</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/Charset.html" title="class or interface in java.nio.charset" class="external-link">Charset</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-153">m_CharsetArg</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_CharsetOpt">
 <h3>m_CharsetOpt</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/Charset.html" title="class or interface in java.nio.charset" class="external-link">Charset</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-157">m_CharsetOpt</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/Charset.html" title="class or interface in java.nio.charset" class="external-link">Charset</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-158">m_CharsetOpt</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_StringArg">
 <h3>m_StringArg</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-194">m_StringArg</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-195">m_StringArg</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="m_StringOpt">
 <h3>m_StringOpt</h3>
-<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-199">m_StringOpt</a></span></div>
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-200">m_StringOpt</a></span></div>
 <div class="block">TODO Add a useful comment.</div>
 </section>
 </li>
@@ -464,7 +584,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="&lt;init&gt;()">
 <h3>CodedCLI</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-207">CodedCLI</a></span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-208">CodedCLI</a></span>()</div>
 <div class="block">Create an instance of <code>CodedCLI</code>.</div>
 </section>
 </li>
@@ -479,7 +599,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="addDefinition(java.util.Collection,int,java.lang.Class,java.util.function.BiConsumer,java.util.function.BiConsumer)">
 <h3>addDefinition</h3>
-<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-224">addDefinition</a></span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? super org.tquadrat.foundation.config.spi.CLIDefinition&gt;&nbsp;cliDefinitions,
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-225">addDefinition</a></span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? super org.tquadrat.foundation.config.spi.CLIDefinition&gt;&nbsp;cliDefinitions,
  int&nbsp;currentIndex,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends T&gt;&nbsp;propertyClass,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr>T&gt;&nbsp;optSetter,
@@ -502,7 +622,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="execute(java.lang.String...)">
 <h3>execute</h3>
-<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-274">execute</a></span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;args)</span>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-275">execute</a></span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;args)</span>
                       throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html" title="class or interface in java.io" class="external-link">IOException</a></span></div>
 <div class="block">Does the programs work.</div>
 <dl class="notes">
@@ -517,9 +637,229 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="getBigDecimalArg()">
+<h3>getBigDecimalArg</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-451">getBigDecimalArg</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getBigDecimalOpt()">
+<h3>getBigDecimalOpt</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-458">getBigDecimalOpt</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getBigIntegerArg()">
+<h3>getBigIntegerArg</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html" title="class or interface in java.math" class="external-link">BigInteger</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-465">getBigIntegerArg</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getBigIntegerOpt()">
+<h3>getBigIntegerOpt</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html" title="class or interface in java.math" class="external-link">BigInteger</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-472">getBigIntegerOpt</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="isBooleanPrimitiveArg()">
+<h3>isBooleanPrimitiveArg</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-479">isBooleanPrimitiveArg</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="isBooleanPrimitiveOpt()">
+<h3>isBooleanPrimitiveOpt</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-486">isBooleanPrimitiveOpt</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getBooleanArg()">
+<h3>getBooleanArg</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-493">getBooleanArg</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getBooleanOpt()">
+<h3>getBooleanOpt</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-500">getBooleanOpt</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getBytePrimitiveArg()">
+<h3>getBytePrimitiveArg</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-507">getBytePrimitiveArg</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getBytePrimitiveOpt()">
+<h3>getBytePrimitiveOpt</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-514">getBytePrimitiveOpt</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getByteArg()">
+<h3>getByteArg</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-521">getByteArg</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getByteOpt()">
+<h3>getByteOpt</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Byte.html" title="class or interface in java.lang" class="external-link">Byte</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-528">getByteOpt</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCharArg()">
+<h3>getCharArg</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">char</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-535">getCharArg</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCharOpt()">
+<h3>getCharOpt</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">char</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-542">getCharOpt</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCharacterArg()">
+<h3>getCharacterArg</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link">Character</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-549">getCharacterArg</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCharacterOpt()">
+<h3>getCharacterOpt</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html" title="class or interface in java.lang" class="external-link">Character</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-556">getCharacterOpt</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCharsetArg()">
+<h3>getCharsetArg</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/Charset.html" title="class or interface in java.nio.charset" class="external-link">Charset</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-563">getCharsetArg</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCharsetOpt()">
+<h3>getCharsetOpt</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/Charset.html" title="class or interface in java.nio.charset" class="external-link">Charset</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-570">getCharsetOpt</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getStringArg()">
+<h3>getStringArg</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-577">getStringArg</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getStringOpt()">
+<h3>getStringOpt</h3>
+<div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-584">getStringOpt</a></span>()</div>
+<div class="block">Getter.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The attribute value.</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="main(java.lang.String...)">
 <h3>main</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-448">main</a></span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;args)</span></div>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name"><a href="../../../../../../src-html/org.tquadrat.foundation.showcase/org/tquadrat/foundation/showcase/config/CodedCLI.html#line-591">main</a></span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;args)</span></div>
 <div class="block">The program entry point.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
