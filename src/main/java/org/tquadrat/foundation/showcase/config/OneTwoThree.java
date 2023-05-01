@@ -26,12 +26,12 @@ import org.tquadrat.foundation.annotation.ClassVersion;
  *  A simple enum type for tests.
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: HexUtils.java 747 2020-12-01 12:40:38Z tquadrat $
+ *  @version $Id: OneTwoThree.java 1054 2023-03-16 19:59:26Z tquadrat $
  *  @since 0.1.0
  *
  *  @UMLGraph.link
  */
-@ClassVersion( sourceVersion = "$Id: HexUtils.java 747 2020-12-01 12:40:38Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: OneTwoThree.java 1054 2023-03-16 19:59:26Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 public enum OneTwoThree
 {

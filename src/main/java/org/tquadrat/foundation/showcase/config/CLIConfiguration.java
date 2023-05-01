@@ -37,12 +37,12 @@ import org.tquadrat.foundation.config.Option;
  *  A configuration bean definition.
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: CLIConfiguration.java 1053 2023-03-11 00:10:49Z tquadrat $
+ *  @version $Id: CLIConfiguration.java 1054 2023-03-16 19:59:26Z tquadrat $
  *  @since 0.1.0
  *
  *  @UMLGraph.link
  */
-@ClassVersion( sourceVersion = "$Id: CLIConfiguration.java 1053 2023-03-11 00:10:49Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: CLIConfiguration.java 1054 2023-03-16 19:59:26Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 @ConfigurationBeanSpecification( synchronizeAccess = true )
 public interface CLIConfiguration extends CLIBeanSpec
