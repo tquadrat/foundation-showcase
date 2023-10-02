@@ -89,7 +89,7 @@ loadScripts(document, 'script');</script>
   <hr>
   <p><div class="source-container"><pre><span class="source-line-no">001</span>/*
 <span class="source-line-no">002</span> * ============================================================================
-<span class="source-line-no">003</span> *  Copyright &copy; 2002-2021 by Thomas Thrien.
+<span class="source-line-no">003</span> *  Copyright &copy; 2002-2024 by Thomas Thrien.
 <span class="source-line-no">004</span> *  All Rights Reserved.
 <span class="source-line-no">005</span> * ============================================================================
 <span class="source-line-no">006</span> *  Licensed to the public under the agreements of the GNU Lesser General Public
@@ -139,84 +139,105 @@ loadScripts(document, 'script');</script>
 <span class="source-line-no">050</span> *  @thanks  Thomas Thrien - thomas.thrien@tquadrat.org
 <span class="source-line-no">051</span> *  @inspired Several Java books and some open source projects.
 <span class="source-line-no">052</span> *
-<span class="source-line-no">053</span> *  @version $Id: Sample.java 934 2021-12-06 15:19:40Z tquadrat $
+<span class="source-line-no">053</span> *  @version $Id: Sample.java 1075 2023-10-02 12:37:07Z tquadrat $
 <span class="source-line-no">054</span> *
 <span class="source-line-no">055</span> *  @UMLGraph.link
 <span class="source-line-no">056</span> *  @since 0.1.0
 <span class="source-line-no">057</span> */
-<span class="source-line-no">058</span>@ClassVersion( sourceVersion = &quot;$Id: Sample.java 934 2021-12-06 15:19:40Z tquadrat $&quot; )
-<span class="source-line-no">059</span>@API( status = STABLE, since = &quot;0.1.0&quot; )
-<span class="source-line-no">060</span>public class Sample implements Serializable, EventListener, AnInterface
-<span class="source-line-no">061</span>{
-<span class="source-line-no">062</span>        /*---------------*\
-<span class="source-line-no">063</span>    ====** Inner Classes **====================================================
-<span class="source-line-no">064</span>        \*---------------*/
-<span class="source-line-no">065</span>
-<span class="source-line-no">066</span>        /*-----------*\
-<span class="source-line-no">067</span>    ====** Constants **========================================================
-<span class="source-line-no">068</span>        \*-----------*/
-<span class="source-line-no">069</span>
-<span class="source-line-no">070</span>        /*------------*\
-<span class="source-line-no">071</span>    ====** Attributes **=======================================================
-<span class="source-line-no">072</span>        \*------------*/
-<span class="source-line-no">073</span>/*SNIP_START*/
-<span class="source-line-no">074</span>    /**
-<span class="source-line-no">075</span>     *  {@summary A field.}&lt;br&gt;
-<span class="source-line-no">076</span>     *  &lt;br&gt;{ include {source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
-<span class="source-line-no">077</span>     */
-<span class="source-line-no">078</span>    private String m_Field;
-<span class="source-line-no">079</span>/*SNIP_END*/
-<span class="source-line-no">080</span>
-<span class="source-line-no">081</span>        /*------------------------*\
-<span class="source-line-no">082</span>    ====** Static Initialisations **===========================================
-<span class="source-line-no">083</span>        \*------------------------*/
-<span class="source-line-no">084</span>
-<span class="source-line-no">085</span>        /*--------------*\
-<span class="source-line-no">086</span>    ====** Constructors **=====================================================
-<span class="source-line-no">087</span>        \*--------------*/
-<span class="source-line-no">088</span>
-<span class="source-line-no">089</span>        /*---------*\
-<span class="source-line-no">090</span>    ====** Methods **==========================================================
-<span class="source-line-no">091</span>        \*---------*/
-<span class="source-line-no">092</span>/*SNIP_START*/
-<span class="source-line-no">093</span>    /**
-<span class="source-line-no">094</span>     *  &lt;p&gt;{@summary A method.}&lt;/p&gt;
-<span class="source-line-no">095</span>     *  &lt;p&gt;{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}&lt;/p&gt;
-<span class="source-line-no">096</span>     *
-<span class="source-line-no">097</span>     *  @return A value.&lt;br&gt;
-<span class="source-line-no">098</span>     *      &lt;br&gt;{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
-<span class="source-line-no">099</span>     */
-<span class="source-line-no">100</span>    @Override
-<span class="source-line-no">101</span>    public String method() { return m_Field; }
-<span class="source-line-no">102</span>/*SNIP_END*/
-<span class="source-line-no">103</span>}
-<span class="source-line-no">104</span>//  class Sample
+<span class="source-line-no">058</span>@SuppressWarnings( &quot;ClassWithoutConstructor&quot; )
+<span class="source-line-no">059</span>@ClassVersion( sourceVersion = &quot;$Id: Sample.java 1075 2023-10-02 12:37:07Z tquadrat $&quot; )
+<span class="source-line-no">060</span>@API( status = STABLE, since = &quot;0.1.0&quot; )
+<span class="source-line-no">061</span>public class Sample implements Serializable, EventListener, AnInterface
+<span class="source-line-no">062</span>{
+<span class="source-line-no">063</span>        /*---------------*\
+<span class="source-line-no">064</span>    ====** Inner Classes **====================================================
+<span class="source-line-no">065</span>        \*---------------*/
+<span class="source-line-no">066</span>
+<span class="source-line-no">067</span>        /*-----------*\
+<span class="source-line-no">068</span>    ====** Constants **========================================================
+<span class="source-line-no">069</span>        \*-----------*/
+<span class="source-line-no">070</span>
+<span class="source-line-no">071</span>        /*------------*\
+<span class="source-line-no">072</span>    ====** Attributes **=======================================================
+<span class="source-line-no">073</span>        \*------------*/
+<span class="source-line-no">074</span>/*SNIP_START*/
+<span class="source-line-no">075</span>    /**
+<span class="source-line-no">076</span>     *  {@summary A field.}&lt;br&gt;
+<span class="source-line-no">077</span>     *  &lt;br&gt;{ include {source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
+<span class="source-line-no">078</span>     */
+<span class="source-line-no">079</span>    @SuppressWarnings( &quot;unused&quot; )
+<span class="source-line-no">080</span>    private String m_Field;
+<span class="source-line-no">081</span>/*SNIP_END*/
+<span class="source-line-no">082</span>
+<span class="source-line-no">083</span>        /*------------------------*\
+<span class="source-line-no">084</span>    ====** Static Initialisations **===========================================
+<span class="source-line-no">085</span>        \*------------------------*/
+<span class="source-line-no">086</span>
+<span class="source-line-no">087</span>        /*--------------*\
+<span class="source-line-no">088</span>    ====** Constructors **=====================================================
+<span class="source-line-no">089</span>        \*--------------*/
+<span class="source-line-no">090</span>
+<span class="source-line-no">091</span>        /*---------*\
+<span class="source-line-no">092</span>    ====** Methods **==========================================================
+<span class="source-line-no">093</span>        \*---------*/
+<span class="source-line-no">094</span>/*SNIP_START*/
+<span class="source-line-no">095</span>    /**
+<span class="source-line-no">096</span>     *  &lt;p&gt;{@summary A method.}&lt;/p&gt;
+<span class="source-line-no">097</span>     *  &lt;p&gt;{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}&lt;/p&gt;
+<span class="source-line-no">098</span>     *
+<span class="source-line-no">099</span>     *  @return A value.&lt;br&gt;
+<span class="source-line-no">100</span>     *      &lt;br&gt;{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
+<span class="source-line-no">101</span>     */
+<span class="source-line-no">102</span>    @Override
+<span class="source-line-no">103</span>    public final String method() { return m_Field; }
+<span class="source-line-no">104</span>    /*SNIP_END*/
 <span class="source-line-no">105</span>
-<span class="source-line-no">106</span>/*
-<span class="source-line-no">107</span> *  End of File
-<span class="source-line-no">108</span> */
+<span class="source-line-no">106</span>    /**
+<span class="source-line-no">107</span>     *  {@inheritDoc}
+<span class="source-line-no">108</span>     */
+<span class="source-line-no">109</span>    @Override
+<span class="source-line-no">110</span>    public final void oneMoreMethod() { /* Does nothing! */  }
+<span class="source-line-no">111</span>}
+<span class="source-line-no">112</span>//  class Sample
+<span class="source-line-no">113</span>
+<span class="source-line-no">114</span>/*
+<span class="source-line-no">115</span> *  End of File
+<span class="source-line-no">116</span> */
 </pre></div></p>
   <hr style="height:2px">
   <p>Included a source file, but only the relevant parts:</p>
   <hr>
   <p><div class="source-container"><pre>&hellip;
-<span class="source-line-no">073</span>    /**
-<span class="source-line-no">074</span>     *  {@summary A field.}&lt;br&gt;
-<span class="source-line-no">075</span>     *  &lt;br&gt;{ include {source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
-<span class="source-line-no">076</span>     */
-<span class="source-line-no">077</span>    private String m_Field;
+<span class="source-line-no">074</span>    /**
+<span class="source-line-no">075</span>     *  {@summary A field.}&lt;br&gt;
+<span class="source-line-no">076</span>     *  &lt;br&gt;{ include {source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
+<span class="source-line-no">077</span>     */
+<span class="source-line-no">078</span>    @SuppressWarnings( &quot;unused&quot; )
+<span class="source-line-no">079</span>    private String m_Field;
 &hellip;
 &hellip;
-<span class="source-line-no">090</span>    /**
-<span class="source-line-no">091</span>     *  &lt;p&gt;{@summary A method.}&lt;/p&gt;
-<span class="source-line-no">092</span>     *  &lt;p&gt;{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}&lt;/p&gt;
-<span class="source-line-no">093</span>     *
-<span class="source-line-no">094</span>     *  @return A value.&lt;br&gt;
-<span class="source-line-no">095</span>     *      &lt;br&gt;{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
-<span class="source-line-no">096</span>     */
-<span class="source-line-no">097</span>    @Override
-<span class="source-line-no">098</span>    public String method() { return m_Field; }
-&hellip;
+<span class="source-line-no">092</span>    /**
+<span class="source-line-no">093</span>     *  &lt;p&gt;{@summary A method.}&lt;/p&gt;
+<span class="source-line-no">094</span>     *  &lt;p&gt;{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}&lt;/p&gt;
+<span class="source-line-no">095</span>     *
+<span class="source-line-no">096</span>     *  @return A value.&lt;br&gt;
+<span class="source-line-no">097</span>     *      &lt;br&gt;{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
+<span class="source-line-no">098</span>     */
+<span class="source-line-no">099</span>    @Override
+<span class="source-line-no">100</span>    public final String method() { return m_Field; }
+<span class="source-line-no">101</span>    /*SNIP_END*/
+<span class="source-line-no">102</span>
+<span class="source-line-no">103</span>    /**
+<span class="source-line-no">104</span>     *  {@inheritDoc}
+<span class="source-line-no">105</span>     */
+<span class="source-line-no">106</span>    @Override
+<span class="source-line-no">107</span>    public final void oneMoreMethod() { /* Does nothing! */  }
+<span class="source-line-no">108</span>}
+<span class="source-line-no">109</span>//  class Sample
+<span class="source-line-no">110</span>
+<span class="source-line-no">111</span>/*
+<span class="source-line-no">112</span> *  End of File
+<span class="source-line-no">113</span> */
 </pre></div></p>
   <hr style="height:2px">
   <p>Included the <code>overview.html</code> file:</p>

@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- *  Copyright © 2002-2021 by Thomas Thrien.
+ *  Copyright © 2002-2023 by Thomas Thrien.
  *  All Rights Reserved.
  * ============================================================================
  *  Licensed to the public under the agreements of the GNU Lesser General Public
@@ -17,13 +17,13 @@
 
 package org.tquadrat.foundation.showcase.config;
 
+import static java.lang.String.format;
 import static java.lang.System.err;
 import static java.lang.System.out;
 import static java.util.Locale.ROOT;
 import static org.apiguardian.api.API.Status.STABLE;
 import static org.tquadrat.foundation.config.ConfigUtil.parseCommandLine;
 import static org.tquadrat.foundation.config.ConfigUtil.printUsage;
-import static org.tquadrat.foundation.util.StringUtils.format;
 
 import java.io.File;
 import java.io.IOException;
@@ -53,13 +53,13 @@ import org.tquadrat.foundation.lang.StringConverter;
  *  This class uses the programmatic approach for the CLI feature from the
  *  config project.
  *
- *  @version $Id: CodedCLI.java 1053 2023-03-11 00:10:49Z tquadrat $
+ *  @version $Id: CodedCLI.java 1075 2023-10-02 12:37:07Z tquadrat $
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
  *  @UMLGraph.link
  *  @since 0.1.0
  */
 @SuppressWarnings( "ClassWithTooManyFields" )
-@ClassVersion( sourceVersion = "$Id: CodedCLI.java 1053 2023-03-11 00:10:49Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: CodedCLI.java 1075 2023-10-02 12:37:07Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 @PlaygroundClass
 public final class CodedCLI
@@ -224,7 +224,7 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
      */
     private final <T> int addDefinition( final Collection<? super CLIDefinition> cliDefinitions, final int currentIndex, final Class<? extends T> propertyClass, final BiConsumer<String,T> optSetter, final BiConsumer<String,T> argSetter )
     {
-        final var stringConverter = StringConverter.forClass( propertyClass ).orElseThrow( () -> new IllegalArgumentException( format( "No StringConverter for '%s'", propertyClass.getName()) ) );
+        final var stringConverter = StringConverter.forClass( propertyClass ).orElseThrow( () -> new IllegalArgumentException( "No StringConverter for '%s'".formatted( propertyClass.getName()) ) );
         final CmdLineValueHandler<T> optHandler = new SimpleCmdLineValueHandler<>( optSetter, stringConverter );
         final CmdLineValueHandler<T> argHandler = new SimpleCmdLineValueHandler<>( argSetter, stringConverter );
 
@@ -235,7 +235,7 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
             new CLIArgumentDefinition(
                 propertyName, // The property name; not used in this context
                 currentIndex, // The index for the argument
-                format( "The argument %s", propertyName ), // The usage text for the help
+                "The argument %s".formatted( propertyName ), // The usage text for the help
                 "MSGKEY_Argument", // The resource bundle key; not used here
                 propertyName.toUpperCase( ROOT ), // The meta variable for the help
                 true, // Arguments are usually required
@@ -248,7 +248,7 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
             new CLIOptionDefinition(
                 propertyName, // The property name; not used in this context
                 List.of( optionName ), // The option names
-                format( "The option for %s", propertyName ), // The usage text for the help
+                "The option for %s".formatted( propertyName ), // The usage text for the help
                "MSGKEY_Option", // The resource bundle key; not used here
                 format( "%S_VALUE", propertyName ), // The meta variable of the option value for the help
                 false, // Options are usually optional …

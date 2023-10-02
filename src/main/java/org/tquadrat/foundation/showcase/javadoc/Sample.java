@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- *  Copyright © 2002-2021 by Thomas Thrien.
+ *  Copyright © 2002-2024 by Thomas Thrien.
  *  All Rights Reserved.
  * ============================================================================
  *  Licensed to the public under the agreements of the GNU Lesser General Public
@@ -50,12 +50,13 @@ import org.tquadrat.foundation.annotation.ClassVersion;
  *  @thanks  Thomas Thrien - thomas.thrien@tquadrat.org
  *  @inspired Several Java books and some open source projects.
  *
- *  @version $Id: Sample.java 934 2021-12-06 15:19:40Z tquadrat $
+ *  @version $Id: Sample.java 1075 2023-10-02 12:37:07Z tquadrat $
  *
  *  @UMLGraph.link
  *  @since 0.1.0
  */
-@ClassVersion( sourceVersion = "$Id: Sample.java 934 2021-12-06 15:19:40Z tquadrat $" )
+@SuppressWarnings( "ClassWithoutConstructor" )
+@ClassVersion( sourceVersion = "$Id: Sample.java 1075 2023-10-02 12:37:07Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 public class Sample implements Serializable, EventListener, AnInterface
 {
@@ -75,6 +76,7 @@ public class Sample implements Serializable, EventListener, AnInterface
      *  {@summary A field.}<br>
      *  <br>{ include {source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
      */
+    @SuppressWarnings( "unused" )
     private String m_Field;
 /*SNIP_END*/
 
@@ -98,8 +100,14 @@ public class Sample implements Serializable, EventListener, AnInterface
      *      <br>{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
      */
     @Override
-    public String method() { return m_Field; }
-/*SNIP_END*/
+    public final String method() { return m_Field; }
+    /*SNIP_END*/
+
+    /**
+     *  {@inheritDoc}
+     */
+    @Override
+    public final void oneMoreMethod() { /* Does nothing! */  }
 }
 //  class Sample
 

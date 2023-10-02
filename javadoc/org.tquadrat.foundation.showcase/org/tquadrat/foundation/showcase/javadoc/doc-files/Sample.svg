@@ -7,7 +7,7 @@
      version='1.1'
      baseProfile='full'
      width='786.000'
-     height='484.000'>
+     height='495.000'>
     <defs>
         <style><![CDATA[
             line
@@ -118,7 +118,7 @@
         </marker>
         <clipPath id='ID000001'>
             <rect class='focusClass'
-                  height='62.000'
+                  height='73.000'
                   width='172.000'
                   x='0.000'
                   y='0.000'/>
@@ -130,7 +130,7 @@
                     <rect x='0.000'
                           y='0.000'
                           width='172.000'
-                          height='62.000'
+                          height='73.000'
                           class='focusClass'/>
                     <line x1='0.000'
                           y1='17.000'
@@ -149,6 +149,8 @@
                           y='47.000'>+ Sample()</text>
                     <text x='5.000'
                           y='58.000'>+ method():java.lang.String</text>
+                    <text x='5.000'
+                          y='69.000'>+ oneMoreMethod():void</text>
                 </g>
             </g>
         </symbol>
@@ -286,7 +288,7 @@
         </symbol>
         <clipPath id='ID000005'>
             <rect class='otherClass'
-                  height='62.000'
+                  height='73.000'
                   width='172.000'
                   x='0.000'
                   y='0.000'/>
@@ -297,7 +299,7 @@
                     <rect x='0.000'
                           y='0.000'
                           width='172.000'
-                          height='62.000'
+                          height='73.000'
                           class='otherClass'/>
                     <line x1='0.000'
                           y1='28.000'
@@ -320,6 +322,9 @@
                     <text x='5.000'
                           y='58.000'
                           class='abstract'>+ method():java.lang.String</text>
+                    <text x='5.000'
+                          y='69.000'
+                          class='abstract'>+ oneMoreMethod():void</text>
                 </g>
             </g>
         </symbol>
@@ -334,7 +339,7 @@
           d='M418.000,297.000 c0.000,-195.000,77.000,0.000,77.000,-195.000 v-15'
           marker-end='url(#implementation)'/>
     <path class='implementation'
-          d='M468.000,297.000 c0.000,-195.000,207.000,0.000,207.000,-195.000 v-15'
+          d='M468.000,297.000 c0.000,-184.000,207.000,0.000,207.000,-184.000 v-15'
           marker-end='url(#implementation)'/>
     <use x='25.000'
          y='25.000'

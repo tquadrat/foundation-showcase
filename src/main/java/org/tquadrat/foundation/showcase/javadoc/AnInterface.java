@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- *  Copyright © 2002-2021 by Thomas Thrien.
+ *  Copyright © 2002-2023 by Thomas Thrien.
  *  All Rights Reserved.
  * ============================================================================
  *  Licensed to the public under the agreements of the GNU Lesser General Public
@@ -26,13 +26,13 @@ import org.tquadrat.foundation.annotation.ClassVersion;
  *  <p>{@summary An interface.}</p>
  *  <p>{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}</p>
  *
- *  @version $Id: AnInterface.java 934 2021-12-06 15:19:40Z tquadrat $
+ *  @version $Id: AnInterface.java 1075 2023-10-02 12:37:07Z tquadrat $
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
  *  @UMLGraph.link
  *  @since 0.1.0
  */
-@ClassVersion( sourceVersion = "$Id: AnInterface.java 934 2021-12-06 15:19:40Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: AnInterface.java 1075 2023-10-02 12:37:07Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 public interface AnInterface
 {
@@ -51,6 +51,11 @@ public interface AnInterface
      *      <br>{@include ${source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
      */
     public String method();
+
+    /**
+     *  <p>A another method.</p>
+     */
+    public void oneMoreMethod();
 }
 //  interface AnInterface
 

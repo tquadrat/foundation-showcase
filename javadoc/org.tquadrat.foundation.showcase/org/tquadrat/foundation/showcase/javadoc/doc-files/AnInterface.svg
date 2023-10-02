@@ -7,7 +7,7 @@
      version='1.1'
      baseProfile='full'
      width='222.000'
-     height='374.000'>
+     height='396.000'>
     <defs>
         <style><![CDATA[
             line
@@ -118,7 +118,7 @@
         </marker>
         <clipPath id='ID000001'>
             <rect class='focusClass'
-                  height='62.000'
+                  height='73.000'
                   width='172.000'
                   x='0.000'
                   y='0.000'/>
@@ -130,7 +130,7 @@
                     <rect x='0.000'
                           y='0.000'
                           width='172.000'
-                          height='62.000'
+                          height='73.000'
                           class='focusClass'/>
                     <line x1='0.000'
                           y1='28.000'
@@ -153,12 +153,15 @@
                     <text x='5.000'
                           y='58.000'
                           class='abstract'>+ method():java.lang.String</text>
+                    <text x='5.000'
+                          y='69.000'
+                          class='abstract'>+ oneMoreMethod():void</text>
                 </g>
             </g>
         </symbol>
         <clipPath id='ID000002'>
             <rect class='otherClass'
-                  height='62.000'
+                  height='73.000'
                   width='172.000'
                   x='0.000'
                   y='0.000'/>
@@ -169,7 +172,7 @@
                     <rect x='0.000'
                           y='0.000'
                           width='172.000'
-                          height='62.000'
+                          height='73.000'
                           class='otherClass'/>
                     <line x1='0.000'
                           y1='17.000'
@@ -188,17 +191,19 @@
                           y='47.000'>+ Sample()</text>
                     <text x='5.000'
                           y='58.000'>+ method():java.lang.String</text>
+                    <text x='5.000'
+                          y='69.000'>+ oneMoreMethod():void</text>
                 </g>
             </g>
         </symbol>
     </defs>
     <path class='implementation'
-          d='M111.000,187.000 L111.000,87.000'
+          d='M111.000,198.000 L111.000,98.000'
           marker-end='url(#implementation)'/>
     <use x='25.000'
          y='25.000'
          xlink:href='#org.tquadrat.foundation.showcase.javadoc.AnInterface'/>
     <use x='25.000'
-         y='187.000'
+         y='198.000'
          xlink:href='#org.tquadrat.foundation.showcase.javadoc.Sample'/>
 </svg>

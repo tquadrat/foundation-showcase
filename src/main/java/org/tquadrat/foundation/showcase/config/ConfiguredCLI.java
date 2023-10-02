@@ -29,13 +29,13 @@ import org.tquadrat.foundation.annotation.ProgramClass;
  *  Shows the use of the configure CLI.
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: ConfiguredCLI.java 1053 2023-03-11 00:10:49Z tquadrat $
+ *  @version $Id: ConfiguredCLI.java 1075 2023-10-02 12:37:07Z tquadrat $
  *  @since 0.1.0
  *
  *  @UMLGraph.link
  */
-@SuppressWarnings( {"ClassWithoutConstructor", "UtilityClassCanBeEnum"} )
-@ClassVersion( sourceVersion = "$Id: ConfiguredCLI.java 1053 2023-03-11 00:10:49Z tquadrat $" )
+@SuppressWarnings( {"ClassWithoutConstructor"} )
+@ClassVersion( sourceVersion = "$Id: ConfiguredCLI.java 1075 2023-10-02 12:37:07Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 @ProgramClass
 public final class ConfiguredCLI

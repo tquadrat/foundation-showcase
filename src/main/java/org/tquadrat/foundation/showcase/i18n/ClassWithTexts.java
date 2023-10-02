@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- *  Copyright © 2002-2021 by Thomas Thrien.
+ *  Copyright © 2002-2023 by Thomas Thrien.
  *  All Rights Reserved.
  * ============================================================================
  *  Licensed to the public under the agreements of the GNU Lesser General Public
@@ -36,13 +36,13 @@ import org.tquadrat.foundation.i18n.UseAdditionalTexts;
  *  A class with texts and message for the text of the I18N annotation
  *  processor.
  *
- *  @version $Id: ClassWithTexts.java 995 2022-01-23 01:09:35Z tquadrat $
+ *  @version $Id: ClassWithTexts.java 1075 2023-10-02 12:37:07Z tquadrat $
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
  *  @UMLGraph.link
  *  @since 0.1.0
  */
-@ClassVersion( sourceVersion = "$Id: ClassWithTexts.java 995 2022-01-23 01:09:35Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: ClassWithTexts.java 1075 2023-10-02 12:37:07Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 @UseAdditionalTexts
 @UtilityClass
@@ -54,6 +54,7 @@ public final class ClassWithTexts
     /**
      *  Caption for the title of the book.
      */
+    @SuppressWarnings( "unused" )
     @Text
     (
         description = "The caption for the input field that takes the title of a book",
@@ -70,6 +71,7 @@ public final class ClassWithTexts
     /**
      *  Caption for the title of the book.
      */
+    @SuppressWarnings( "unused" )
     @Text
     (
         description = "The caption for the input field that takes the title of a book",
