@@ -17,8 +17,8 @@
 
 package org.tquadrat.foundation.showcase.config;
 
+import static java.lang.String.format;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.tquadrat.foundation.util.StringUtils.format;
 
 import java.io.File;
 
@@ -31,9 +31,9 @@ import org.tquadrat.foundation.testutil.TestBaseClass;
  *  Performs tests related to the CLI feature from the config project.
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: TestCLI.java 898 2021-04-06 23:19:36Z tquadrat $
+ *  @version $Id: TestCLI.java 1076 2023-10-03 18:36:07Z tquadrat $
  */
-@ClassVersion( sourceVersion = "$Id: TestCLI.java 898 2021-04-06 23:19:36Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: TestCLI.java 1076 2023-10-03 18:36:07Z tquadrat $" )
 @DisplayName( "org.tquadrat.foundation.showcase.config.TestCLI" )
 public class TestCLI extends TestBaseClass
 {
