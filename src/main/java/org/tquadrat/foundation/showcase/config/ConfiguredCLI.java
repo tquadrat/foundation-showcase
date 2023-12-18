@@ -34,12 +34,19 @@ import org.tquadrat.foundation.annotation.ProgramClass;
  *
  *  @UMLGraph.link
  */
-@SuppressWarnings( {"ClassWithoutConstructor"} )
 @ClassVersion( sourceVersion = "$Id: ConfiguredCLI.java 1075 2023-10-02 12:37:07Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 @ProgramClass
 public final class ConfiguredCLI
 {
+        /*--------------*\
+    ====** Constructors **=====================================================
+        \*--------------*/
+    /**
+     *  No instance allowed for this class.
+     */
+    private ConfiguredCLI() { /* Just exists */ }
+
         /*---------*\
     ====** Methods **==========================================================
         \*---------*/

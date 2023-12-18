@@ -73,8 +73,8 @@ public class Sample implements Serializable, EventListener, AnInterface
         \*------------*/
 /*SNIP_START*/
     /**
-     *  {@summary A field.}<br>
-     *  <br>{ include {source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}
+     *  <p>{@summary A field.}</p>
+     *  <p>{ include {source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}</p>
      */
     @SuppressWarnings( "unused" )
     private String m_Field;
