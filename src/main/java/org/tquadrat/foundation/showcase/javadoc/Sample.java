@@ -50,13 +50,13 @@ import org.tquadrat.foundation.annotation.ClassVersion;
  *  @thanks  Thomas Thrien - thomas.thrien@tquadrat.org
  *  @inspired Several Java books and some open source projects.
  *
- *  @version $Id: Sample.java 1075 2023-10-02 12:37:07Z tquadrat $
+ *  @version $Id: Sample.java 1080 2024-01-03 11:05:21Z tquadrat $
  *
  *  @UMLGraph.link
  *  @since 0.1.0
  */
 @SuppressWarnings( "ClassWithoutConstructor" )
-@ClassVersion( sourceVersion = "$Id: Sample.java 1075 2023-10-02 12:37:07Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: Sample.java 1080 2024-01-03 11:05:21Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 public class Sample implements Serializable, EventListener, AnInterface
 {
