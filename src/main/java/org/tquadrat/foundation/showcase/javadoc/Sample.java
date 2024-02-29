@@ -50,24 +50,15 @@ import org.tquadrat.foundation.annotation.ClassVersion;
  *  @thanks  Thomas Thrien - thomas.thrien@tquadrat.org
  *  @inspired Several Java books and some open source projects.
  *
- *  @version $Id: Sample.java 1080 2024-01-03 11:05:21Z tquadrat $
+ *  @version $Id: Sample.java 1105 2024-02-28 12:58:46Z tquadrat $
  *
  *  @UMLGraph.link
  *  @since 0.1.0
  */
-@SuppressWarnings( "ClassWithoutConstructor" )
-@ClassVersion( sourceVersion = "$Id: Sample.java 1080 2024-01-03 11:05:21Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: Sample.java 1105 2024-02-28 12:58:46Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 public class Sample implements Serializable, EventListener, AnInterface
 {
-        /*---------------*\
-    ====** Inner Classes **====================================================
-        \*---------------*/
-
-        /*-----------*\
-    ====** Constants **========================================================
-        \*-----------*/
-
         /*------------*\
     ====** Attributes **=======================================================
         \*------------*/
@@ -75,18 +66,20 @@ public class Sample implements Serializable, EventListener, AnInterface
     /**
      *  <p>{@summary A field.}</p>
      *  <p>{ include {source}/org/tquadrat/foundation/showcase/javadoc/doc-files/SimpleInclude.txt}</p>
+     *
+     *  @serial
      */
     @SuppressWarnings( "unused" )
     private String m_Field;
 /*SNIP_END*/
 
-        /*------------------------*\
-    ====** Static Initialisations **===========================================
-        \*------------------------*/
-
         /*--------------*\
     ====** Constructors **=====================================================
         \*--------------*/
+    /**
+     *  Creates a new instance of {@code Sample}.
+     */
+    public Sample() { /* Just exists. */ }
 
         /*---------*\
     ====** Methods **==========================================================
