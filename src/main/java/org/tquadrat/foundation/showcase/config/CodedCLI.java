@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- *  Copyright © 2002-2023 by Thomas Thrien.
+ *  Copyright © 2002-2025 by Thomas Thrien.
  *  All Rights Reserved.
  * ============================================================================
  *  Licensed to the public under the agreements of the GNU Lesser General Public
@@ -53,13 +53,13 @@ import org.tquadrat.foundation.lang.StringConverter;
  *  This class uses the programmatic approach for the CLI feature from the
  *  config project.
  *
- *  @version $Id: CodedCLI.java 1075 2023-10-02 12:37:07Z tquadrat $
+ *  @version $Id: CodedCLI.java 1151 2025-10-01 21:32:15Z tquadrat $
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
  *  @UMLGraph.link
  *  @since 0.1.0
  */
 @SuppressWarnings( "ClassWithTooManyFields" )
-@ClassVersion( sourceVersion = "$Id: CodedCLI.java 1075 2023-10-02 12:37:07Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: CodedCLI.java 1151 2025-10-01 21:32:15Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 @PlaygroundClass
 public final class CodedCLI
@@ -279,42 +279,42 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
         final Collection<CLIDefinition> cliDefinitions = new ArrayList<>();
 
         //---* BigDecimal *----------------------------------------------------
-        final BiConsumer<String,BigDecimal> bigDecimalArgSetter = ($,value) -> m_BigDecimalArg = value;
-        final BiConsumer<String,BigDecimal> bigDecimalOptSetter = ($,value) -> m_BigDecimalOpt = value;
+        final BiConsumer<String,BigDecimal> bigDecimalArgSetter = (_,value) -> m_BigDecimalArg = value;
+        final BiConsumer<String,BigDecimal> bigDecimalOptSetter = (_,value) -> m_BigDecimalOpt = value;
         argIndex = addDefinition( cliDefinitions, argIndex, BigDecimal.class, bigDecimalOptSetter, bigDecimalArgSetter );
 
         //---* BigInteger *----------------------------------------------------
-        final BiConsumer<String,BigInteger> bigIntegerArgSetter = ($,value) -> m_BigIntegerArg = value;
-        final BiConsumer<String,BigInteger> bigIntegerOptSetter = ($,value) -> m_BigIntegerOpt = value;
+        final BiConsumer<String,BigInteger> bigIntegerArgSetter = (_,value) -> m_BigIntegerArg = value;
+        final BiConsumer<String,BigInteger> bigIntegerOptSetter = (_,value) -> m_BigIntegerOpt = value;
         argIndex = addDefinition( cliDefinitions, argIndex, BigInteger.class, bigIntegerOptSetter, bigIntegerArgSetter );
 
         //---* Byte *----------------------------------------------------------
-        BiConsumer<String,Byte> byteArgSetter = ($,value) -> m_BytePrimitiveArg = value.byteValue();
-        BiConsumer<String,Byte> byteOptSetter = ($,value) -> m_BytePrimitiveOpt = value.byteValue();
+        BiConsumer<String,Byte> byteArgSetter = (_,value) -> m_BytePrimitiveArg = value.byteValue();
+        BiConsumer<String,Byte> byteOptSetter = (_,value) -> m_BytePrimitiveOpt = value.byteValue();
         argIndex = addDefinition( cliDefinitions, argIndex, byte.class, byteOptSetter, byteArgSetter );
-        byteArgSetter = ($,value) -> m_ByteArg = value;
-        byteOptSetter = ($,value) -> m_ByteOpt = value;
+        byteArgSetter = (_,value) -> m_ByteArg = value;
+        byteOptSetter = (_,value) -> m_ByteOpt = value;
         argIndex = addDefinition( cliDefinitions, argIndex, Byte.class, byteOptSetter, byteArgSetter );
 
         //---* char and Character *--------------------------------------------
-        BiConsumer<String,Character> charArgSetter = ($,value) -> m_CharArg = value.charValue();
-        BiConsumer<String,Character> charOptSetter = ($,value) -> m_CharOpt = value.charValue();
+        BiConsumer<String,Character> charArgSetter = (_,value) -> m_CharArg = value.charValue();
+        BiConsumer<String,Character> charOptSetter = (_,value) -> m_CharOpt = value.charValue();
         argIndex = addDefinition( cliDefinitions, argIndex, char.class, charOptSetter, charArgSetter );
-        charArgSetter = ($,value) -> m_CharacterArg = value;
-        charOptSetter = ($,value) -> m_CharacterOpt = value;
+        charArgSetter = ( _,value) -> m_CharacterArg = value;
+        charOptSetter = (_,value) -> m_CharacterOpt = value;
         argIndex = addDefinition( cliDefinitions, argIndex, Character.class, charOptSetter, charArgSetter );
 
         //---* Charset *-------------------------------------------------------
-        final BiConsumer<String,Charset> charsetArgSetter = ($,value) -> m_CharsetArg = value;
-        final BiConsumer<String,Charset> charsetOptSetter = ($,value) -> m_CharsetOpt = value;
+        final BiConsumer<String,Charset> charsetArgSetter = (_,value) -> m_CharsetArg = value;
+        final BiConsumer<String,Charset> charsetOptSetter = (_,value) -> m_CharsetOpt = value;
         argIndex = addDefinition( cliDefinitions, argIndex, Charset.class, charsetOptSetter, charsetArgSetter );
 
         /*
          *  The types requiring special handling.
          */
         //---* Boolean *-------------------------------------------------------
-        BiConsumer<String,Boolean> booleanArgSetter = ($,value) -> m_BooleanPrimitiveArg = value.booleanValue();
-        BiConsumer<String,Boolean> booleanOptSetter = ($,value) -> m_BooleanPrimitiveOpt = value.booleanValue();
+        BiConsumer<String,Boolean> booleanArgSetter = (_,value) -> m_BooleanPrimitiveArg = value.booleanValue();
+        BiConsumer<String,Boolean> booleanOptSetter = (_,value) -> m_BooleanPrimitiveOpt = value.booleanValue();
         CmdLineValueHandler<Boolean> booleanArgHandler = new BooleanValueHandler( booleanArgSetter );
         CmdLineValueHandler<Boolean> booleanOptHandler = new BooleanValueHandler( booleanOptSetter );
         cliDefinitions.add(
@@ -353,8 +353,8 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
                 false, // The option value is not multi-value
                 null // No special format
             ) );
-        booleanArgSetter = ($,value) -> m_BooleanArg = value;
-        booleanOptSetter = ($,value) -> m_BooleanOpt = value;
+        booleanArgSetter = (_,value) -> m_BooleanArg = value;
+        booleanOptSetter = (_,value) -> m_BooleanOpt = value;
         booleanArgHandler = new BooleanValueHandler( booleanArgSetter );
         booleanOptHandler = new BooleanValueHandler( booleanOptSetter );
         cliDefinitions.add(
@@ -395,8 +395,8 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
             ) );
 
         //---* String *--------------------------------------------------------
-        final BiConsumer<String,String> stringArgSetter = ($,value) -> m_StringArg = value;
-        final BiConsumer<String,String> stringOptSetter = ($,value) -> m_StringOpt = value;
+        final BiConsumer<String,String> stringArgSetter = (_,value) -> m_StringArg = value;
+        final BiConsumer<String,String> stringOptSetter = (_,value) -> m_StringOpt = value;
         final CmdLineValueHandler<String> stringArgHandler = new StringValueHandler( stringArgSetter );
         final CmdLineValueHandler<String> stringOptHandler = new StringValueHandler( stringOptSetter );
         //noinspection UnusedAssignment
@@ -589,7 +589,7 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
      *  @param  args    The command line arguments.
      */
     @SuppressWarnings( "UseOfSystemOutOrSystemErr" )
-    public static final void main( final String... args )
+    public static final void main( @SuppressWarnings( "unused" ) final String... args )
     {
         try
         {
