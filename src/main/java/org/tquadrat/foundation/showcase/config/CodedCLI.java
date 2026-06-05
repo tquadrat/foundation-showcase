@@ -53,13 +53,13 @@ import org.tquadrat.foundation.lang.StringConverter;
  *  This class uses the programmatic approach for the CLI feature from the
  *  config project.
  *
- *  @version $Id: CodedCLI.java 1151 2025-10-01 21:32:15Z tquadrat $
+ *  @version $Id: CodedCLI.java 1258 2026-06-04 18:33:06Z tquadrat $
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
  *  @UMLGraph.link
  *  @since 0.1.0
  */
 @SuppressWarnings( "ClassWithTooManyFields" )
-@ClassVersion( sourceVersion = "$Id: CodedCLI.java 1151 2025-10-01 21:32:15Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: CodedCLI.java 1258 2026-06-04 18:33:06Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 @PlaygroundClass
 public final class CodedCLI
@@ -268,7 +268,7 @@ org.tquadrat.foundation.util.stringconverter.ZoneIdStringConverter
      *  Does the programs work.
      *
      *  @param  args    The command line arguments.
-     *  @return {@code true} if the execution was successful, {@code false}
+     *  @return {@true} if the execution was successful, {@false}
      *      otherwise.
      *  @throws IOException Cannot write the usage.
      */
